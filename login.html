@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body class="overflow-scroll">
+    <div class="mx-auto py-5 mt-5 w-50 container-xs container-sm container-md container-lg container-xl container-xxl">
+        <h2 class="mb-3">Log In</h2>
+        <div class="input-group mb-4 has-validation" id="userid">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <label for="username">Username</label>
+            </div>
+            <div class="invalid-feedback">
+                Please enter a valid email address.
+            </div>
+        </div>
+        <div class="input-group mb-4 has-validation" id="passwordholder">
+            <div class="form-floating">
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="invalid-feedback">
+                Please enter a valid email address.
+            </div>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="keeploggedin">
+            <label class="form-check-label mb-3" for="keeploggedin">Keep me Logged In</label>
+        </div>
+        <button class="btn btn-primary mb-3 w-100" type="submit" id="btnlogin">Log In</button>
+        <button type="submit" onclick="window.location.href='./index.html';" class="btn btn-primary mb-3 w-100" id="btnsignup">Don't have an account? Create Account !!!</button>
+    </div>
+</body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+    import { getDatabase, set, ref, child, get, update, remove } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+    const firebaseConfig = {
+        apiKey: "",
+        authDomain: "",
+        databaseURL: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: "",
+        measurementId: ""
+      };
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const database = getDatabase(app);
+
+    const username = document.getElementById('username')
+    const password = document.getElementById('password')
+    const submit=document.getElementById('btnlogin');
+
+    function AuthenticateUser(){
+        const dbref=ref(database);
+        get(child(dbref,"UsersList/"+username.value)).then((snapshot)=>{
+            if(snapshot.exists()){
+                let dbPass=decPass(snapshot.val().password);
+                if(dbPass==password.value){
+                    login(snapshot.val());
+                }
+                else{
+                    alert("User doesn't exist.");
+                }
+            }
+            else{
+                alert("Username or Password is Invalid !!!");
+            }
+        });
+    }
+    function decPass(dbpass){
+        var pass12=CryptoJS.AES.decrypt(dbpass,password.value);
+        return pass12.toString(CryptoJS.enc.Utf8);
+      }
+    function login(user){
+        let keepLoggedIn=document.getElementById('keeploggedin').checked;
+        if(!keepLoggedIn){
+            var dt = new Date().toLocaleString('en', {timeZone: 'Asia/Kolkata'});
+            update(ref(database, "UsersList/"+username.value),{
+                last_login: dt,
+            })
+            sessionStorage.setItem('user',JSON.stringify(user));
+            window.location="./home.html";
+        }
+        else{
+            var dt = new Date().toLocaleString('en', {timeZone: 'Asia/Kolkata'});
+            update(ref(database, "UsersList/"+username.value),{
+                last_login: dt,
+            })
+            localStorage.setItem('keepLoggedIn','yes');
+            localStorage.setItem('user',JSON.stringify(user));
+            window.location="./home.html";
+        }
+    }
+    submit.addEventListener('click',AuthenticateUser)
+</script>
+</html>
