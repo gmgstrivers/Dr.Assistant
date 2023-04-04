@@ -24,7 +24,7 @@ Side it helps the patient to connect to the specialised doctor get there queries
 
 <h2> Team Members</h2>
 <ul>
-<li>Aman Agrawal</li>
-<li>Rajesh Kumar Sahoo</li>
-<li>Kalinga Abhisek</li>
+<li><a href="https://www.linkedin.com/in/amanagrawal20156/">Aman Agrawal</li>
+<li><a href="https://www.linkedin.com/in/rajesh-kumar-sahoo-9b3095189/">Rajesh Kumar Sahoo</li>
+<li><a href="https://www.linkedin.com/in/kalingaabhisek/">Kalinga Abhisek</li>
 </ul>
