@@ -8,7 +8,7 @@
 <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/gmgstrivers/Dr.Assistant?style=flat-square">
 <img alt="GitHub Repo issues" src="https://img.shields.io/github/issues/gmgstrivers/Dr.Assistant?style=flat-square">
 <br />
- <a href="https://github.com/gmgstrivers/Dr.Assistant">View Demo</a>
+ <a href="http://www.gmgstrivers.co/">View Demo</a>
 ·
 <a href="https://github.com/gmgstrivers/Dr.Assistant/issues">Report Bug</a>
 ·
