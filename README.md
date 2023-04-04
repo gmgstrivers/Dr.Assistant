@@ -8,6 +8,11 @@
 <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/gmgstrivers/Dr.Assistant?style=flat-square">
 <img alt="GitHub Repo issues" src="https://img.shields.io/github/issues/gmgstrivers/Dr.Assistant?style=flat-square">
 <br />
+ <a href="https://github.com/gmgstrivers/Dr.Assistant">View Demo</a>
+·
+<a href="https://github.com/gmgstrivers/Dr.Assistant/issues">Report Bug</a>
+·
+<a href="https://github.com/gmgstrivers/Dr.Assistant/issues">Request Feature</a>
 </div>
 We as a team have developed a Full stack site Which will assist the doctor and help to predict some 
 Of the disease which requires a significant amount of time to diagnose it. It also help the patient to connect to the doctor and get solution while just sitting in home.
