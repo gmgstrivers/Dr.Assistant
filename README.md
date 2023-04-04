@@ -1,3 +1,5 @@
+<br />
+<div align="center">
 <h1 align="center"><b>Dr.Assistant</b></h1>
 <br />
 <img src="https://img.shields.io/github/languages/code-size/gmgstrivers/Dr.Assistant?style=flat-square" alt="Code size" />
@@ -6,6 +8,7 @@
 <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/gmgstrivers/Dr.Assistant?style=flat-square">
 <img alt="GitHub Repo issues" src="https://img.shields.io/github/issues/gmgstrivers/Dr.Assistant?style=flat-square">
 <br />
+</div>
 We as a team have developed a Full stack site Which will assist the doctor and help to predict some 
 Of the disease which requires a significant amount of time to diagnose it. It also help the patient to connect to the doctor and get solution while just sitting in home.
 <br>
