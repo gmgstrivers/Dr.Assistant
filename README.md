@@ -1,8 +1,9 @@
 <br />
+<img src="https://img.freepik.com/premium-vector/medical-team-doctor-nurse-assistant-cartoon-character-vector_18981-791.jpg?w=2000" alt="logo" width="150" height="150">
+<br>
 <div align="center">
 <h1 align="center"><b>Dr.Assistant</b></h1>
 <br />
-<img src="https://img.freepik.com/premium-vector/medical-team-doctor-nurse-assistant-cartoon-character-vector_18981-791.jpg?w=2000" alt="logo" width="150" height="150">
 <br>
 <img src="https://img.shields.io/github/languages/code-size/gmgstrivers/Dr.Assistant?style=flat-square" alt="Code size" />
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/gmgstrivers/Dr.Assistant?style=flat-square">
