@@ -12,7 +12,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
 <div>
-    <div class="mx-auto py-5 mt-5 w-50 container-xs container-sm container-md container-lg container-xl container-xxl">
+    <div class="mx-auto container-xs h-100 d-flex align-items-center justify-content-center container-sm container-md container-lg container-xl container-xxl">
+        <h2>Dr.Assistant</h2>
+    </div>
+    <br>
+    <div class="mx-auto container-xs h-100 d-flex align-items-center justify-content-center container-sm container-md container-lg container-xl container-xxl">
+        <img src="https://img.freepik.com/premium-vector/medical-team-doctor-nurse-assistant-cartoon-character-vector_18981-791.jpg?w=2000" alt="logo" width="150" height="150">
+    </div>
+    <div class="mx-auto mt-5 w-50 container-xs container-sm container-md container-lg container-xl container-xxl">
         <h2 class="mb-3">Create Account</h2>
         <div class="input-group mb-4" id="fullnamefield">
             <div class="form-floating">
@@ -51,14 +58,14 @@
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
     import { getDatabase, set, ref, child, get, update, remove } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
     const firebaseConfig = {
-        apiKey: "",
-        authDomain: "",
-        databaseURL: "",
-        projectId: "",
-        storageBucket: "",
-        messagingSenderId: "",
-        appId: "",
-        measurementId: ""
+        apiKey: "AIzaSyB_i5wsqbfrIRjhE8ypYezvry2eOFQ5VvA",
+        authDomain: "malignantdetectorfirebase.firebaseapp.com",
+        databaseURL: "https://malignantdetectorfirebase-default-rtdb.firebaseio.com",
+        projectId: "malignantdetectorfirebase",
+        storageBucket: "malignantdetectorfirebase.appspot.com",
+        messagingSenderId: "64263378248",
+        appId: "1:64263378248:web:38f94d295c0e8057d54f7d",
+        measurementId: "G-MNLSQ1D1XH"
       };
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
