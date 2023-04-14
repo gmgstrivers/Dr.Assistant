@@ -49,25 +49,25 @@ side it helps the patient to connect to the specialised doctor, get there querie
 <div>
 <h2> Screenshots </h2>
 <br>
-![image](https://user-images.githubusercontent.com/65694523/232080261-d41e9ddd-0c5f-4c25-9226-379f1dd49b31.png)
+<img src="https://user-images.githubusercontent.com/65694523/232080261-d41e9ddd-0c5f-4c25-9226-379f1dd49b31.png">
 <br>
-![image](https://user-images.githubusercontent.com/65694523/232080351-14b2b67b-8468-463d-9786-33c08dff3fd6.png)
+<img src="https://user-images.githubusercontent.com/65694523/232080351-14b2b67b-8468-463d-9786-33c08dff3fd6.png">
 <br>
-![image](https://user-images.githubusercontent.com/65694523/232080654-f59a0a50-96ea-484a-94e8-da2f637dbc64.png)
+<img src="https://user-images.githubusercontent.com/65694523/232080654-f59a0a50-96ea-484a-94e8-da2f637dbc64.png">
 <br>
-![image](https://user-images.githubusercontent.com/65694523/232080956-8f03147f-e942-4ed1-801b-8a14c5a58324.png)
+<img src="https://user-images.githubusercontent.com/65694523/232080956-8f03147f-e942-4ed1-801b-8a14c5a58324.png">
 <br>
 ##Malignant Detector Screenshot
 <br>
-![image](https://user-images.githubusercontent.com/65694523/232081298-f85aa4c6-0c43-4689-928c-f270e4b2db5e.png)
+<img src="https://user-images.githubusercontent.com/65694523/232081298-f85aa4c6-0c43-4689-928c-f270e4b2db5e.png">
 <br>
 ##Heart Disease Predictor Screenshot
 <br>
-![image](https://user-images.githubusercontent.com/65694523/232081613-32c3520d-fc56-4030-a5db-8dfd9cd302c0.png)
+<img src="https://user-images.githubusercontent.com/65694523/232081613-32c3520d-fc56-4030-a5db-8dfd9cd302c0.png">
 <br>
 ##Diabetes Predictor Screenshot
 <br>
-![image](https://user-images.githubusercontent.com/65694523/232081823-1a13a9bc-e2e4-4f4e-a489-c2259e1798e2.png)
+<img src="https://user-images.githubusercontent.com/65694523/232081823-1a13a9bc-e2e4-4f4e-a489-c2259e1798e2.png">
 <div>
 
 
