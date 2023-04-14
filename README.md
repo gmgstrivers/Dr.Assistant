@@ -58,17 +58,17 @@ side it helps the patient to connect to the specialised doctor, get there querie
 <img src="https://user-images.githubusercontent.com/65694523/232080956-8f03147f-e942-4ed1-801b-8a14c5a58324.png">
 <br>
  <br>
-##Malignant Detector Screenshot
+ <h2>Malignant Detector Screenshot</h2>
 <br>
 <img src="https://user-images.githubusercontent.com/65694523/232081298-f85aa4c6-0c43-4689-928c-f270e4b2db5e.png">
 <br>
  <br>
-##Heart Disease Predictor Screenshot
+ <h2>Heart Disease Predictor Screenshot</h2>
 <br>
 <img src="https://user-images.githubusercontent.com/65694523/232081613-32c3520d-fc56-4030-a5db-8dfd9cd302c0.png">
 <br>
  <br>
-##Diabetes Predictor Screenshot
+ <h2>Diabetes Predictor Screenshot</h2>
 <br>
 <img src="https://user-images.githubusercontent.com/65694523/232081823-1a13a9bc-e2e4-4f4e-a489-c2259e1798e2.png">
 <div>
