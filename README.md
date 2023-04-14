@@ -46,7 +46,7 @@ So in short our site aims to provide a solution to both doctor and patient.
 It will assist the doctor to predict the disease in less amount of time and in the other
 side it helps the patient to connect to the specialised doctor, get there queries resolved in a small amount of time and at less travel cost.
 
-<br>
+<div>
 <h2> Screenshots </h2>
 <br>
 ![image](https://user-images.githubusercontent.com/65694523/232080261-d41e9ddd-0c5f-4c25-9226-379f1dd49b31.png)
@@ -68,7 +68,7 @@ side it helps the patient to connect to the specialised doctor, get there querie
 ##Diabetes Predictor Screenshot
 <br>
 ![image](https://user-images.githubusercontent.com/65694523/232081823-1a13a9bc-e2e4-4f4e-a489-c2259e1798e2.png)
-
+<div>
 
 
 
